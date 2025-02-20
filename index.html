@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        label{display: block;}
+        input{margin-bottom: 12px;}
+    </style>
 </head>
 <body>
-    
+    <form>
+        <label for="cep">Cep</label>
+        <input type="text" id="cep" placeholder="00000000" onkeyup="buscarCep()" maxlength="8">
+        <label for="logradouro">Endereço</label>
+        <input type="text" id="logradouro" disabled>
+        <label for="bairro">Bairro</label>
+        <input type="text" id="bairro" disabled>
+        <label for="localidade">Cidade</label>
+        <input type="text" id="localidade" disabled>
+        <label for="estado">Estado</label>
+        <input type="text" id="estado" disabled>
+
+    </form>
+
+    <script src="index.js"></script>
 </body>
 </html>
